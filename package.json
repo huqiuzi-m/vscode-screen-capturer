@@ -1,7 +1,7 @@
 {
-	"name": "vscode-screen-recorder",
-	"displayName": "vscode-screen-recorder",
-	"description": "screen recorder 录屏工具",
+	"name": "vscode-screen-capturer",
+	"displayName": "vscode-screen-capturer",
+	"description": "screen capturer 录屏工具",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.39.0"
