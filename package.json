@@ -1,7 +1,7 @@
 {
 	"name": "vscode-screen-recorder",
 	"displayName": "vscode-screen-recorder",
-	"description": "screen recorder",
+	"description": "screen recorder 录屏工具",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.39.0"
@@ -10,16 +10,23 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"*"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
+				"command": "screenCapturer.startOrStop",
+				"title": "Capture Screen"
 			}
-		]
+		],
+		"keybindings": [
+            {
+                "command": "screenCapturer.startOrStop",
+                "key": "ctrl+f10",
+                "mac": "cmd+f10"
+            }
+        ]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
